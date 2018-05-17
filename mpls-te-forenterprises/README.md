@@ -5,12 +5,12 @@
   
 ## 2. Principles of Traffic Engineering
   * CSPF
-  * Where is the state located?
-    * Hard state vs. Soft state
   * RSVP
     * roots in QoS
       * resource conflict arbitration vs. conflict avoidance
     * with TE, hosts do not participate in RSVP, only routers
+  * Where is the state located?
+    * Hard state vs. Soft state
   * IGP modifications
 
 ## 3. Implementation Example
