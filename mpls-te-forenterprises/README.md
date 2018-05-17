@@ -1,7 +1,7 @@
 ## 1. The Problem
   * Link State IGP's use SPF
     * path selection is based on cost
-    * what if cost isn't enough?
+    * when is cost not sufficient?
   
 ## 2. Principles of Traffic Engineering
   * CSPF
