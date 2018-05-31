@@ -1,3 +1,14 @@
+## 0. Scope
+  * In Scope:
+    * Fundamentals of the protocols that make TE work
+	* Configuration using simple explicit path
+	* General use cases that would be useful for an enterprise network already running MPLS
+  * Out of Scope:
+    * IP FRR / LFA  - fast convergence without running label switching
+	* segment routing - newer, arguably better approach to solving some of the problems MPLS-TE solves
+	* Multi area IGP issues, Forwarding Adjacency or other interactions with the IGP
+	* DSCP-aware TE or any "advanced" TE concepts in general
+
 ## 1. The Problem
   * Link State IGP's use SPF
     * path selection is based on cost
