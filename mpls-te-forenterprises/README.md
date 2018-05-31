@@ -2,7 +2,7 @@
   * Link State IGP's use SPF
     * path selection is based on cost
     * when is cost not sufficient?
-  
+
 ## 2. Principles of Traffic Engineering
   * CSPF
   * RSVP
@@ -68,7 +68,7 @@ interface Tunnel18
  tunnel destination 8.8.8.8
  tunnel mpls traffic-eng autoroute announce   !! pull the routes on the tailend back through the tunnel
  tunnel mpls traffic-eng path-option 10 explicit name PE1-to-PE8  !! tell the tunnel which path to take, hop by hop
-! 
+!
 ip explicit-path name PE1-to-PE8 enable
  next-address 172.16.13.3
  next-address 10.9.35.5
@@ -80,9 +80,11 @@ ip explicit-path name PE1-to-PE8 enable
 ## 5. Use Cases
   * Most use cases will involve using a private backbone of some sort
   * Case 1: 1 odd duck link (strategic)
+![Case 1](mpls-te-case1.png)
   * Case 2: New nontransit datacenter (strategic)
   * Case 3: Transition from IPSec VPN over Internet to private backbone (tactical or strategic)
-  
+![Case 3](mpls-te-case3.png)
+
 ## 6. Further Reading
   * Books
     * Traffic Engineering with MPLS (Osborne and Simha, Cisco Press)
