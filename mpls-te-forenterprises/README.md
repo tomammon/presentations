@@ -27,6 +27,8 @@
 
 ## 4. Implementation Example
 
+![TE Lab Topology](mpls-te-labtopology.png)
+
   * base configuration requirements
     * enabled globally
     * enabled in the IGP
