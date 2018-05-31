@@ -19,7 +19,7 @@
       * unidirectional
       * signalled from the headend
 
-## 3. High-level TE Design
+## 3. High-level TE Design Concepts
 
   * strategic
   * tactical
@@ -62,7 +62,19 @@ interface GigabitEthernet1
 
   * IOS-XE configuration example:
 ```
-configuration here
+interface Tunnel18
+ ip unnumbered Loopback0
+ tunnel mode mpls traffic-eng
+ tunnel destination 8.8.8.8
+ tunnel mpls traffic-eng autoroute announce   !! pull the routes on the tailend back through the tunnel
+ tunnel mpls traffic-eng path-option 10 explicit name PE1-to-PE8  !! tell the tunnel which path to take, hop by hop
+! 
+ip explicit-path name PE1-to-PE8 enable
+ next-address 172.16.13.3
+ next-address 10.9.35.5
+ next-address 10.9.56.6
+ next-address 10.9.67.7
+ next-address 172.16.78.8
 ```
 
 ## 5. Use Cases
