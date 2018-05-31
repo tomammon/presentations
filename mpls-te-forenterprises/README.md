@@ -80,10 +80,8 @@ ip explicit-path name PE1-to-PE8 enable
 ## 5. Use Cases
   * Most use cases will involve using a private backbone of some sort
   * Case 1: 1 odd duck link (strategic)
-![Case 1](mpls-te-case1.png)
-  * Case 2: New nontransit datacenter (strategic)
+  * Case 2: Route around congestion (tactical)
   * Case 3: Transition from IPSec VPN over Internet to private backbone (tactical or strategic)
-![Case 3](mpls-te-case3.png)
 
 ## 6. Further Reading
   * Books
