@@ -37,7 +37,16 @@
 
   * IOS-XE configuration example:
 ```
-configuration here
+mpls traffic-eng tunnels
+!
+router isis lab
+ metric-style wide    !! required to enable IS-IS to carry the TE database
+ mpls traffic-eng router-id Loopback0     !! which IP interface will be the source for RSVP PATH and RESV messages
+ mpls traffic-eng level-2
+!
+interface GigabitEthernet1
+ mpls traffic-eng tunnels
+ ip rsvp bandwidth       !! tell RSVP to reserve some of this interface's bandwidth for TE tunnels. default is 75%.
 ```
 
   * tunnel requirements
